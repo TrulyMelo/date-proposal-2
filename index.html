@@ -95,9 +95,9 @@ function finishAndText(){ goStep(5); }
 function sendWhatsApp(){
   const date = document.getElementById('dateInput').value || "not picked";
   const time = document.getElementById('timeInput').value || "not picked";
-  const message = `Heyy! I SAID YES!! 😍%0A%0ADate: ${date}%0ATime: ${time}%0AFood: ${selectedFood}%0A%0ABe ready by 6, you're coming to get me right? 💕`;
-  const url = `https://zaf01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwa.me%2F%24&data=05%7C02%7C44ha2507628%40myboston.co.za%7C257e88bd057d4aabf6f108df2383c583%7C2aada6576d1e4320b92edd700921dda5%7C0%7C0%7C639268721028830645%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Yn0%2F0Ma1dGASRNJw9y6ZHczuBrlZWIoZEvOx6K1Va%2F8%3D&reserved=0{YOUR_NUMBER}?text=${message}`;
-  window.open(url, '_blank');
+  const rawMessage = `Heyy! I SAID YES!! 😍\n\nDate: ${date}\nTime: ${time}\nActivity: ${selectedFood}\n\nCan't wait!! 💕`;
+  const message = encodeURIComponent(rawMessage);
+  window.open(`https://zaf01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwa.me%2F%24&data=05%7C02%7C44ha2507628%40myboston.co.za%7C07709a13014e4a8c80e708df238bc96f%7C2aada6576d1e4320b92edd700921dda5%7C0%7C0%7C639268755458876013%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=crbtcfrxokA2TxRBPRe8VSRZKtG3Gem1QcCdVnrzsT8%3D&reserved=0{YOUR_NUMBER}?text=${message}`, '_blank');
 }
 </script>
 </body>
