@@ -38,7 +38,7 @@ h1{font-size:22px;color:#333;margin:10px 0 20px}
 </div>
 
 <div id="step2" class="card hidden">
-<img class="pfp" src="https://i.imgflip.com/2fm6x.jpg" style="width:110px;height:110px>
+<img class="pfp" src="https://i.imgflip.com/2fm6x.jpg" style="width:110px;height:110px">
 <div class="big-text">WAIT YOU ACTUALLY SAID YES?? 😭</div>
 <p class="sub">I was so ready for you to say no 🥺</p>
 <button class="btn btn-yes" onclick="goStep(3)">okay okay! ➜</button>
@@ -59,18 +59,23 @@ h1{font-size:22px;color:#333;margin:10px 0 20px}
 </div>
 
 <div id="step4" class="card hidden">
-<h1>What are we feeling? 🍕✨</h1>
+<h1>What are we feeling? 🍣✨</h1>
 <div class="food-grid">
 <div class="food" onclick="selectFood(this,'Pizza')">🍕<br>Pizza</div>
 <div class="food" onclick="selectFood(this,'Burgers')">🍔<br>Burgers</div>
-<div class="food" onclick="selectFood(this,'Pasta')">🍝<br>Pasta</div>
-<div class="food" onclick="selectFood(this, 'Ice Cream')">🍦<br>Ice Cream</div>
+<div class="food" onclick="selectFood(this,'Ice Cream')">🍦<br>ice cream</div>
+<div class="food" onclick="selectFood(this,'Ramen')">🍜<br>Ramen</div>
+ <div id="step1" class="card"><img class="pfp" src="https://zaf01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1601758228041-f3b2795255f1%3Fw%3D200&data=05%7C02%7C44ha2507628%40myboston.co.za%7Cd4e74a3633f74ae4fa5108df2390ac2c%7C2aada6576d1e4320b92edd700921dda5%7C0%7C0%7C639268776420696931%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=mE0bKHcgtB7USJkBJ02MVcCh1rfFpuCZUXicVCKlmt8%3D&reserved=0"><h1>🌸 Will you go on a date with me? 🌸</h1><button class="btn btn-yes" onclick="goStep(2)">yes 🌷</button><button id="noBtn" class="btn btn-no" onmouseover="evade()" onclick="evade()">no 😢</button></div>
+<div id="step2" class="card hidden"><img class="pfp" src="https://zaf01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fi.imgflip.com%2F2fm6x.jpg&data=05%7C02%7C44ha2507628%40myboston.co.za%7Cd4e74a3633f74ae4fa5108df2390ac2c%7C2aada6576d1e4320b92edd700921dda5%7C0%7C0%7C639268776420708309%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=HLLUMGAzgV8K%2FQHeVeH0NWqiEl15kGgA3w9rBQ1IuZ8%3D&reserved=0" style="width:110px;height:110px"><div class="big-text">WAIT YOU ACTUALLY SAID YES?? 😭</div><p class="sub">I was so ready for you to say no 🥺</p><button class="btn btn-yes" onclick="goStep(3)">okay okay! ➜</button></div>
+<div id="step3" class="card hidden"><h1>So... when are you free? 📅</h1><div class="input-group"><label>Pick a Day</label><input type="date" id="dateInput"></div><div class="input-group"><label>What Time?</label><select id="timeInput"><option disabled selected>Select a time...</option><option>2:00 PM — day date? cute</option><option>5:00 PM — this is the right answer tbh</option><option>6:00 PM — sunset vibes</option><option>7:00 PM — night out energy</option></select></div><button class="pink-btn" onclick="goStep(4)">set the date! 💕</button></div>
+<div id="step4" class="card hidden"><h1>What should we do? ✨</h1><div class="food-grid"><div class="food" onclick="selectFood(this,'Bowling')">🎳<br>Bowling</div><div class="food" onclick="selectFood(this,'Arcade Games')">🕹️<br>Arcade</div><div class="food" onclick="selectFood(this,'Mini Golf')">⛳️<br>Mini Golf</div><div class="food" onclick="selectFood(this,'Carnival')">🎡<br>Carnival</div><div class="food" onclick="selectFood(this,'Go Kart')">🏎️<br>Go Kart</div><div class="food" onclick="selectFood(this,'Zoo')">🦁<br>Zoo</div><div class="food" onclick="selectFood(this,'Picnic')">🧺<br>Picnic</div><div class="food" onclick="selectFood(this,'Ice Cream')">🍦<br>Ice Cream</div><div class="food" onclick="selectFood(this,'Movies')">🍿<br>Movies</div></div><button class="pink-btn" onclick="finishAndText()">that's the one! 🌸</button></div>
+<div id="step5" class="card hidden">
 </div>
 <button class="pink-btn" onclick="finishAndText()">that's the one! 🌸</button>
 </div>
 
 <div id="step5" class="card hidden">
-<img class="final-img" src="https://images.unsplash.com/
+<img class="final-img" src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=300">
 <h1 style="font-size:18px">glad you didn't say no. be ready by 6, I'm coming to get you 😍</h1>
 <p style="font-size:14px;color:#ff8fa3;margin-top:15px">Click below to send me the details!</p>
 <button class="pink-btn" onclick="sendWhatsApp()">Send to me on WhatsApp 💌</button>
@@ -83,9 +88,9 @@ const YOUR_NUMBER = "27658485096";
 let selectedFood = "";
 let c=0;
 function evade(){
- const b=document.getElementById('noBtn'); c++; b.classList.add('evading');
- b.style.left=Math.random()*(window.innerWidth-b.offsetWidth-20)+'px';
- b.style.top=Math.random()*(window.innerHeight-b.offsetHeight-20)+'px';
+const b=document.getElementById('noBtn'); c++; b.classList.add('evading');
+b.style.left=Math.random()*(window.innerWidth-b.offsetWidth-20)+'px';
+b.style.top=Math.random()*(window.innerHeight-b.offsetHeight-20)+'px';
 }
 function goStep(n){document.querySelectorAll('.card').forEach(x=>x.classList.add('hidden'));document.getElementById('step'+n).classList.remove('hidden');}
 function selectFood(el,name){document.querySelectorAll('.food').forEach(f=>f.classList.remove('selected'));el.classList.add('selected');selectedFood=name;}
@@ -93,12 +98,12 @@ function selectFood(el,name){document.querySelectorAll('.food').forEach(f=>f.cla
 function finishAndText(){ goStep(5); }
 
 function sendWhatsApp(){
-  const date = document.getElementById('dateInput').value || "not picked";
-  const time = document.getElementById('timeInput').value || "not picked";
-  const rawMessage = `Heyy! I SAID YES!! 😍\n\nDate: ${date}\nTime: ${time}\nActivity: ${selectedFood}\n\nCan't wait!! 💕`;
-  const message = encodeURIComponent(rawMessage);
-  window.open(`httpa:/wa.me/${YOUR_NUMBER}?text=${message}`,'_blank');
-             
+ const date = document.getElementById('dateInput').value || "not picked";
+ const time = document.getElementById('timeInput').value || "not picked";
+ const food = selectedFood || "not picked";
+ const message = `Heyy! I SAID YES!! 😍\n\nDate: ${date}\nTime: ${time}\nFood: ${food}\n\nBe ready by 6, you're coming to get me right? 💕`;
+ const url = `https://wa.me/${YOUR_NUMBER}?text=${encodeURIComponent(message)}`;
+ window.open(url, '_blank');
 }
 </script>
 </body>
